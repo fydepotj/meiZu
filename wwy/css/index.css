@@ -1,0 +1,338 @@
+em,
+i {
+  font-style: normal;
+}
+
+li {
+  list-style-type: none;
+}
+
+body {
+  background: #f4f4f4;
+
+}
+
+dd,
+dl,
+dt,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+p,
+ul {
+  margin     : 0;
+  padding    : 0;
+  list-style : none;
+  font-weight: 400;
+}
+
+.banner {
+  height             : 450px;
+  margin             : 0 auto;
+  background-image   : url(../images/banner.jpg);
+  background-color   : #f2f2f2;
+  background-position: center 0;
+  background-repeat  : no-repeat;
+  background-size    : cover;
+}
+
+.title {
+  margin-top   : 87px;
+  margin-bottom: 25px;
+  font-size    : 30px;
+  line-height  : 1;
+}
+
+.filter-order a {
+  position    : relative;
+  font-size   : 18px;
+  color       : #343434;
+  line-height : 20px;
+  margin-right: 15px;
+}
+
+.filter-order a:first-child {
+  color: #00c3f5;
+}
+
+.filter-order a:hover {
+  color: #00c3f5;
+}
+
+.picul {
+  width: 1255px;
+}
+
+
+
+.pic1 {
+  background-color: #fff;
+  width           : 403px;
+  height          : 556px;
+  padding-top     : 40px;
+  padding-bottom  : 28px;
+  box-sizing      : border-box;
+  text-align      : center;
+  margin          : 0 15px 15px 0;
+  transition      : all 0.3s ease;
+}
+
+.pic1:hover {
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+.pic1 img {
+  display: inline-block;
+  width  : 80%;
+  margin : 0 auto;
+  height : 320px;
+  width  : 320px;
+}
+.cir{
+height: 38px;
+}
+
+.cir img {
+  display: none;
+  height : 24px;
+  width  : 24px;
+  margin : 10px 0 10px 0;
+}
+
+.item-title {
+  font-size    : 23px;
+  color        : #333;
+  padding      : 0 12px;
+  text-align   : center;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+.item-desc {
+  display      : inline-block;
+  margin       : 5px auto;
+  color        : #666;
+  text-align   : center;
+  min-height   : 24px;
+  font-size    : 16px;
+  font-weight  : 300;
+  max-width    : 270px;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+  overflow     : hidden;
+}
+
+.item-price {
+  padding      : 0 12px;
+  text-align   : center;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+.item-price .vm-price {
+  color    : #c00;
+  font-size: 28px;
+}
+
+.item-price em {
+  font-size: 16px;
+  color    : #c00;
+}
+
+.item-price__tag {
+  margin-right: 2px;
+  font-size   : 14px;
+  color       : #c00;
+}
+
+.mod-title {
+  text-align   : left;
+  font-size    : 24px;
+  color        : #333;
+  font-weight  : 400;
+  overflow     : hidden;
+  margin-top   : 90px;
+  margin-bottom: 25px;
+}
+
+/* .... */
+.recommend-slider {
+  overflow  : hidden;
+  background: #fff;
+  border    : 1px solid #fefefe;
+}
+
+.recommend-slider-wrap {
+  width              : 2000%;
+  transition-duration: 0s;
+  transform          : translate3d(0px, 0px, 0px);
+}
+
+.rs-item {
+  width       : 310px;
+  margin-right: 0px;
+  float       : left;
+  display     : block;
+}
+
+.rs-item-wrap {
+  display       : block;
+  text-align    : center;
+  padding-top   : 40px;
+  padding-bottom: 44px;
+}
+
+.mod-pic img {
+  width     : 230px;
+  min-height: 230px;
+}
+
+.mod-desc {
+  margin-top: 36px;
+  text-align: center;
+
+}
+
+.vm-title {
+  font-size    : 21px;
+  color        : #2b2b2b;
+  overflow     : hidden;
+  text-overflow: ellipsis;
+  white-space  : nowrap;
+}
+
+.vm-price {
+  margin-top: 8px;
+  font-size : 16px;
+  color     : #c00;
+}
+.vm-price-text{
+  display: inline-block;
+  font-size: 26px;
+}
+
+.lbt {
+  position: relative;
+  height  : 100%
+}
+
+/* 本例子css */
+.picScroll-left {
+  width         : 100%;
+  /* overflow   : hidden; */
+  position      : relative;
+  margin-bottom : 80px
+    /* border   : 1px solid #ccc; */
+}
+
+.picScroll-left .hd {
+  overflow  : hidden;
+  height    : 30px;
+  background: #f4f4f4;
+  padding   : 0 10px;
+  position  : absolute;
+  right     : 550px;
+  bottom    : -60px;
+
+}
+
+
+
+.picScroll-left .hd .next {
+  background-position: 0 -50px;
+}
+
+.picScroll-left .hd .prevStop {
+  background-position: -60px 0;
+}
+
+.picScroll-left .hd .nextStop {
+  background-position: -60px -50px;
+}
+
+.picScroll-left .hd ul {
+  overflow: hidden;
+
+
+}
+
+
+.picScroll-left .hd ul li {
+  background-color: #fff;
+  width           : 16px;
+  height          : 16px;
+  margin-right    : 0px;
+  float           : left;
+  display         : block;
+  overflow        : hidden;
+  margin-right    : 10px;
+  text-indent     : -999px;
+  cursor          : pointer;
+  border-radius   : 50%;
+  border          : 1px solid #ccc;
+}
+
+.picScroll-left .hd ul li:hover {
+  background-color   :#ccc;
+}
+
+.picScroll-left .hd ul li.on {
+  background-position: 0 0;
+  background-color   :#ccc;
+
+}
+
+.picScroll-left .bd {
+  padding-top: 10px;
+}
+
+.picScroll-left .bd ul {
+  background         : #fff;
+  overflow           : hidden;
+  width              : 100%;
+  transition-duration: 0s;
+  transform          : translate3d(0px, 0px, 0px);
+  zoom               : 1;
+}
+
+.picScroll-left .bd ul li {
+  width       : 310px;
+  margin-right: 0px;
+  float       : left;
+  display     : block;
+}
+
+.picScroll-left .bd ul li .pic a {
+  display          : block;
+  text-align       : center;
+  /* padding-top   : 40px;
+  padding-bottom   : 44px; */
+  box-sizing       : border-box;
+}
+
+.picScroll-left .bd ul li .pic img {
+  width     : 230px;
+  min-height: 230px;
+  display   : block;
+  margin    : 0 auto;
+
+}
+
+.picScroll-left .bd ul li .pic a:hover img {
+  width     : 230px;
+  min-height: 230px;
+}
+
+.picScroll-left .bd ul li .title {
+  line-height: 24px;
+}
+
+.tempWrap {
+  width: 100% !important;
+}

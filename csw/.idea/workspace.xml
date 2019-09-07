@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f69ae3a9-96ce-43f8-b4e9-68a0e73b6731" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/.tmp/" />
+    <ignored path="$PROJECT_DIR$/temp/" />
+    <ignored path="$PROJECT_DIR$/tmp/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>city-picker-selector</find>
+      <find>html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font:inherit;font-size:100%;vertical-align:baseline}html{line-height:1}ol,ul{list-style:none}table{border-collapse:collapse;border-spacing:0}caption,th,td{text-align:left;font-weight:normal;vertical-align:middle}q,blockquote{quotes:none}q:before,q:after,blockquote:before,blockquote:after{content:&quot;&quot;;content:none}a img{border:none}article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{display:block}a{text-decoration:none}.clearfix,.city-picker-selector{*zoom:1}.clearfix:after,.city-picker-selector:after{content:&quot; &quot;;display:table;height:0;clear:both}.github{background:url(../images/github.png) no-repeat;background-size:contain;display:block;font-size:0;width:100px;height:60px;position:fixed;top:5%;right:6%;-webkit-transform-origin:center;transform-origin:center;-moz-animation:icons 0.5s ease-out infinite alternate;-webkit-animation:icons 0.5s ease-out infinite alternate;animation:icons 0.5s ease-out infinite alternate}@-webkit-keyframes icons{0%{-webkit-transform:rotate(2deg) scale(1);transform:rotate(2deg) scale(1)}to{-webkit-transform:rotate(-2deg) scale(1.1);transform:rotate(-2deg) scale(1.1)}}@keyframes icons{0%{-webkit-transform:rotate(2deg) scale(1);transform:rotate(2deg) scale(1)}to{-webkit-transform:rotate(-2deg) scale(1.1);transform:rotate(-2deg) scale(1.1)}}h3{font-size:20px;margin-top:50px;margin-bottom:20px}.container{width:1000px;margin:0 auto 50px}.dome-main{border:1px solid #e5e5e5;border-radius:5px;padding:20px}.code{border-top:1px solid #e5e5e5;padding-top:10px;margin-top:10px;text-align:center}.show-code{color:#6ab9d8;display:inline-block;padding:0 2%}pre{padding-top:20px;tab-size:4;text-align:left;display:none}pre code{color:#666;font-size:14px;line-height:1.5}.btn-cont{padding-top:10px}.btn{border:none;border-radius:5px;color:#fff;cursor:pointer;background:#6ab9d8;font-size:14px;width:100px;height:38px;outline:none;margin-right:10px}.btn.btn-bg-1{background:#a26ad8}.btn.btn-bg-2{background:#d86a6a}.btn.btn-bg-3{background:#6ad88a}.city-picker-selector .selector-item{border:1px solid #ccc;border-radius:5px;width:200px;height:36px;line-height:36px;float:left;margin-left:20px;position:relative}.city-picker-selector .selector-item:first-child{margin-left:0}.city-picker-selector .selector-item:after{content:'';border-right:6px solid transparent;border-left:6px solid transparent;border-top:6px solid #ccc;display:block;width:0;height:0;position:absolute;top:15px;right:5px;-webkit-transition-duration:400ms;transition-duration:400ms}.city-picker-selector .selector-show .selector-list{-webkit-transform:translateY(0);transform:translateY(0);opacity:1;visibility:visible}.city-picker-selector .selector-show:after{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.city-picker-selector .selector-name{border-radius:5px;color:#333;font-size:16px;display:block;text-indent:5%;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.city-picker-selector .selector-name:hover{background-color:#fdfdfd;border-radius:5px}.city-picker-selector .selector-name.df-color{color:#999}.city-picker-selector .selector-name.forbid{cursor:default}.city-picker-selector .selector-name.disabled{background-color:#eef1f6;cursor:not-allowed}.city-picker-selector .selector-list{border:1px solid #ccc;border-radius:5px;background:#fff;width:100%;position:absolute;top:44px;left:-1px;z-index:1;-webkit-transition-duration:400ms;transition-duration:400ms;-webkit-transform:translateY(-2%);transform:translateY(-2%);opacity:0;visibility:hidden;overflow:hidden}.city-picker-selector ul{max-height:160px;overflow-x:hidden;overflow-y:auto}.city-picker-selector li{border-top:1px solid #f7f7f7;color:#333;cursor:pointer;font-size:14px;width:90%;padding:0 5%;height:30px;line-height:30px;text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.city-picker-selector li:first-child{border-top:none}.city-picker-selector li.placeholder-li{cursor:default}.city-picker-selector li strong{color:#6ab9d8;padding:0 5px}.city-picker-selector li.caller:hover{background:#f5f5f5}.city-picker-selector li.caller.active,.city-picker-selector li.caller.active:hover{background:#6ab9d8;color:#fff}.city-picker-selector li.forbid{color:#999;font-size:14px;cursor:not-allowed}.city-picker-selector .selector-search{border:1px solid #ececec;border-top:none;background:#f8f8f8;font-size:0;padding:10px;height:28px;margin-left:-1px;margin-right:-1px}.city-picker-selector .input-search{border:1px solid #ccc;border-radius:5px;color:#333;font-size:14px;width:100%;height:26px;line-height:26px\9;padding:0;text-indent:5px}.city-picker-selector .input-search:focus{outline:none}.city-picker-selector .input-search::-webkit-input-placeholder{color:#bababa}select{border:1px solid #ccc;background:#fff;border-radius:5px;color:#333;font-size:16px;outline:none;width:160px;height:36px;margin-right:10px;box-shadow:0 0 5px #eee}select:disabled{background-color:#eef1f6;cursor:not-allowed</find>
+      <find>selector-item</find>
+      <find>http</find>
+      <find>dome-main</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/js/car.js" />
+        <option value="$PROJECT_DIR$/car.html" />
+        <option value="$PROJECT_DIR$/css/c_index.css" />
+        <option value="$PROJECT_DIR$/插件/cityPicker/css/index.css" />
+        <option value="$PROJECT_DIR$/插件/cityPicker/js/cityPicker-2.0.3.js" />
+        <option value="$PROJECT_DIR$/插件/cityPicker/dierge.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.css" />
+        <option value="$PROJECT_DIR$/css/scratch.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="319" />
+    <option name="width" value="672" />
+    <option name="height" value="726" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="魅族项目" type="b2602c69:ProjectViewProjectNode" />
+              <item name="魅族项目" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../js练习/$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\学习资料\练习\魅族项目\插件\cityPicker\css" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f69ae3a9-96ce-43f8-b4e9-68a0e73b6731" name="Default" comment="" />
+      <created>1560302314476</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1560302314476</updated>
+      <workItem from="1560302321479" duration="926000" />
+      <workItem from="1560321221652" duration="114000" />
+      <workItem from="1560512739664" duration="42000" />
+      <workItem from="1560513548176" duration="1141000" />
+      <workItem from="1560520259028" duration="29000" />
+      <workItem from="1539525125583" duration="19000" />
+      <workItem from="1560520365749" duration="1607000" />
+      <workItem from="1560557301895" duration="720000" />
+      <workItem from="1560561220332" duration="1143000" />
+      <workItem from="1560564779557" duration="98000" />
+      <workItem from="1560565109742" duration="1692000" />
+      <workItem from="1560580746110" duration="215000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="7746000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13913691" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13913691" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/js/car.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="29" column="74" selection-start-line="29" selection-start-column="74" selection-end-line="29" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/插件/cityPicker/index.html" />
+    <entry file="file://$PROJECT_DIR$/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/c_index.css" />
+    <entry file="file://$PROJECT_DIR$/插件/cityPicker/js/cityPicker-2.0.3.js" />
+    <entry file="file://$PROJECT_DIR$/插件/cityPicker/js/jquery.min.js" />
+    <entry file="file://$PROJECT_DIR$/插件/cityPicker/css/scratch.css" />
+    <entry file="file://$PROJECT_DIR$/插件/cityPicker/css/index.css" />
+    <entry file="file://$PROJECT_DIR$/插件/cityPicker/dierge.html" />
+    <entry file="file://$PROJECT_DIR$/css/scratch.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="106" column="1" lean-forward="true" selection-start-line="106" selection-start-column="1" selection-end-line="106" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/car.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" column="16" lean-forward="true" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/car.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="15" column="69" selection-start-line="15" selection-start-column="69" selection-end-line="225" selection-end-column="34" />
+          <folding>
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#div#2;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

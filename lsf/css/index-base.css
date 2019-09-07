@@ -1,0 +1,403 @@
+/* 头部样式 */
+.lc-meizu-header-container{
+    position: relative;
+    /* height: 82px; */
+    /* top: -82px; */
+    z-index: 1;
+    background: transparent;
+}
+
+.lc-meizu-header{
+    position: relative;
+    /* height: 82px; */
+    /* background: #000; */
+}
+.lc-meizu-header .logo{
+    float: left;
+    width: 125px;
+    height: 82px;
+    line-height: 82px;
+    margin-right: 150px;
+}
+.lc-meizu-header .logo img{
+    width: 125px;
+    height: 24px;
+}
+.nav ul li{
+    float: left;
+    line-height: 82px;  
+}
+.nav ul li a{
+    display: block;
+    padding: 31px 20px 30px;
+    line-height: 21px;
+    font-size: 14px;
+    color: #000;
+}
+.search{
+    position: relative;
+    float: left;
+    margin: 26px 5px 0 10px;
+    width: 170px;
+    height: 30px;
+    line-height: 29px;
+    font-size: 12px;
+    background: #fff;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+ .search input{
+    display: block;
+
+    padding: 0;
+    outline: 0;
+    width: 127px;
+    height: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+    transition: width .5s;
+    font-size: 12px;
+    line-height: 20px;
+    color: #333;
+    background: transparent;
+    box-sizing: content-box;
+    outline-offset: 0;
+}
+.search span{
+    position: relative;
+    position: absolute;
+    top: 1px;
+    right: 10px;
+    width: 17px;
+    height: 14px;
+}
+.user{
+    position: relative; 
+}
+
+.user .user-icon-user, .shopping-cart a {
+    position: absolute;
+    top: 32px;
+    right: 10px;
+    transform: scale(1.5);
+    color: #000;
+}
+.user .user-icon-user{
+    right: 50px;
+}
+
+.lc-meizu-header-container .hd1, .hd2, .hd3, .hd4 {
+    z-index: 999;
+    width: 100%;
+    overflow: hidden;
+    display: none;
+    position: absolute;
+    background-color: #fff;
+}
+.lc-meizu-header-container .hd1 ul, .hd2 ul, .hd3 ul, .hd4 ul{
+    overflow: hidden;
+    padding: 5px 0 20px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 12px;    
+}
+.lc-meizu-header-container .hd1 ul li, .hd2 ul li, .hd3 ul li, .hd4 ul li{
+    display: inline-block;
+    text-align: center;
+    margin: 0;
+    opacity: 0;
+    *zoom: 1;
+    padding: 5px 5px 20px;
+    width: 142px;
+    height: 140px;
+    opacity: 1;
+    font-size: 12px;
+    color: #fff;
+}
+.lc-meizu-header-container .hd1 ul li img, .hd2 ul li img, .hd3 ul li img, .hd4 ul li img{
+    width: 142px;
+    height: 140px;
+}
+.appDownload{
+    z-index: 999;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 82px;
+    background-color: #fff;
+    min-width: 100%;
+    overflow: hidden;
+}
+.appDownload .app-dow{
+    position: relative;
+    width: 1240px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.appDownload .app-dow img{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+}
+.user .login{
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 8px;
+    width: 98px;
+    height: 147px;
+    border-radius: 8px; 
+    background-color: #fff;
+    padding: 15px 0;
+}
+.user .login ul li{
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 17px;
+}
+.user .login ul li a{
+    color: #000;
+}
+.user .login ul li a:hover{
+    color: #00beff;
+}
+
+.shopping-cart i{
+    position: absolute;
+    top: 27px;
+    right: 1px;
+    width: 14px;
+    height: 15px;
+    line-height: 15px;
+    border-radius: 50%;
+    background: #c00;
+    color: #fff;
+    text-align: center;
+    display: inline-block;
+    padding: 0 4px;
+    text-indent: 0;
+    font-size: 10px;
+}
+
+/* 头部结束 */
+/* 主体开始 */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 底部样式 */
+.meizu-footer {
+    margin: 0;
+    padding: 0;
+    z-index: 999;
+    font-size: 14px;
+    color: #515151;
+    position: relative;
+    background-color: #fff;
+}
+#meizu-footer .meizu-footer-link {
+    padding: 48px 0 20px;
+    border-top: 1px solid #f1f1f1;
+}
+
+#meizu-footer .meizu-row{
+    max-width: 1240px;
+    position: relative;
+}
+#meizu-footer .meizu-footer-service{
+    float: left;
+    width: 78%;
+}
+#meizu-footer .meizu-footer-service li {
+    float: left;
+    text-align: center;
+    width: 15%;
+}
+#meizu-footer .meizu-footer-service li a {
+    display: block;
+    overflow: hidden;
+    line-height: 27px;
+    font-size: 12px;
+    color: #666;
+}
+#meizu-footer .meizu-footer-service li img {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+#meizu-footer .onlive-server {
+    float: right;
+    text-align: right;
+    margin-top: -18px;
+}
+#meizu-footer .onlive-server span {
+    color: #999;
+    font-size: 12px;
+    line-height: 30px;
+}
+#meizu-footer .onlive-server .tel {
+    color: #00c3f5;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: -6px;
+    line-height: 40px;
+}
+#meizu-footer .onlive-server .onlive-btn {
+    height: 30px;
+    padding: 0 16px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    border-radius: 20px;
+    margin-top: 3px;
+    display: inline-block;
+    font-size: 14px;
+    background: #0bbbef;
+}
+#meizu-footer .footer-hr {
+    margin: 10px auto 28px;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #eee;
+    padding: 0;
+}
+#meizu-footer .meizu-footer-info {
+    color: #999;
+    text-align: left;
+    font-size: 12px;
+    width: 100%;
+}
+#meizu-footer .meizu-footer-info-left {
+    float: left;
+}
+#meizu-footer .meizu-footer-info-left ul li {
+    padding-right: 15px;
+    border-right: 1px solid #d6d6d6;
+    float: left;
+    height: 18px;
+    margin-right: 15px;
+}
+#meizu-footer .meizu-footer-info-left ul a {
+    display: block;
+    line-height: 18px;
+}
+.meizu-footer-language-wp {
+    float: left;
+}
+.meizu-footer-certificate {
+    padding-top: 8px;
+}
+#meizu-footer .meizu-footer-info a {
+    color: #999;
+}
+#meizu-footer .meizu-footer-info-left .footer-info-record {
+    margin: 0 6px;
+}
+#meizu-footer .meizu-footer-info-left .footer-info-license {
+    margin: 0;
+}
+#ii-subscribe {
+    float: right;
+    margin-top: 25px;
+    position: relative;
+}
+#meizu-footer .meizu-footer-info a {
+    color: #999;
+}
+.ii-hr {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: #eee;
+    margin: 0 10px;
+    position: relative;
+    top: 5px;
+    /* top: 3px; */
+}
+#meizu-footer .meizu-footer-info img {
+    margin-bottom: -9px;
+    position: absolute;
+    bottom: 40px;
+    left: -20px;
+    width: 180px;
+    display: none;
+}
+.ii-subscribe-img {
+    display: inline-block;
+    width: 21px;
+    height: 18px;
+    position: relative;
+    top: 4px;
+    *top: 2px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 96%;
+    /* background-image: url(https://fms.res.meizu.com/dms/2019/01/07/3b085af8-a47b-453c-b147-a4b352fb3a14.png); */
+}
+.ii-subscribe-img em{
+    display: none;
+    background: url(https://fms.res.meizu.com/dms/2019/01/07/6721704b-7b6d-445d-a025-e33649e5db74.png);
+}
+#meizu-footer .meizu-footer-info-left .meizu-footer-language i {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 0;
+    left: 0;
+    background-image: url(../img/lang-logos_118491e.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px 0px;
+}
+#meizu-footer .meizu-footer-info-left .meizu-footer-language a {
+    position: relative;
+    display: block;
+    padding-left: 24px;
+}
+#meizu-footer .meizu-footer-info-left .footer-info-record i {
+    
+    width: 14px;
+    background-image: url(../img/jinghui.png);
+}
+#meizu-footer .meizu-footer-info-left .footer-info-record {
+    margin: 0 6px;
+}
+#meizu-footer .meizu-footer-info-left i {
+    position: relative;
+    top: 4px;
+    display: inline-block;
+    height: 18px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+#meizu-footer .meizu-footer-info-left .footer-info-license i {
+    width: 20px;
+    background-image: url(../img/sprit-1.png);
+}
+#meizu-footer .meizu-footer-info-left .footer-info-wel i {
+    width: 20px;
+    background-image: url(../img/sprit-2.png);
+}
+#meizu-footer .meizu-footer-info-left .footer-info-trust i {
+    width: 25px;
+    background-image: url(../img/sprit-3.png);
+}

@@ -1,0 +1,621 @@
+.header {
+  margin-bottom: 200px;
+  background-color: #000;
+}
+.lsfbanner {
+  width: 1349px;
+  height: 580px;
+}
+/* 本例子css */
+.slideBox {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ddd;
+}
+.slideBox .hd {
+  height: 15px;
+  overflow: hidden;
+  position: absolute;
+  right: 600px;
+  bottom: 5px;
+  z-index: 1;
+}
+.slideBox .hd ul {
+  overflow: hidden;
+  zoom: 1;
+  float: left;
+}
+.slideBox .hd ul li {
+  float: left;
+  margin-right: 25px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  line-height: 14px;
+  text-align: center;
+  background: #888;
+  cursor: pointer;
+}
+.slideBox .hd ul li.on {
+  background: #333;
+  color: #fff;
+}
+.slideBox .bd {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+.slideBox .bd ul {
+  height: 100%;
+  width: 100%;
+}
+.slideBox .bd li {
+  zoom: 1;
+  vertical-align: middle;
+  height: 100%;
+  width: 100%;
+}
+.slideBox .bd a {
+  width: 100%;
+  height: 580px;
+  display: block;
+  background-position: center;
+}
+.lsflbt1 {
+  background: url(../img/1.jpg) no-repeat;
+}
+.lsflbt2 {
+  background: url(../img/2.jpg) no-repeat;
+}
+.lsflbt3 {
+  background: url(../img/3.jpg) no-repeat;
+}
+.lsflbt4 {
+  background: url(../img/4.jpg) no-repeat;
+}
+.lsflbt5 {
+  background: url(../img/5.jpg) no-repeat;
+}
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next {
+  position: absolute;
+  left: 3%;
+  top: 50%;
+  margin-top: -25px;
+  display: block;
+  width: 32px;
+  height: 40px;
+  background: url(../img/slider-arrow.png) -110px 5px no-repeat;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+  background-color: #888;
+}
+.slideBox .next {
+  left: auto;
+  right: 3%;
+  background-position: 8px 5px;
+}
+.slideBox .prev:hover,
+.slideBox .next:hover {
+  filter: alpha(opacity=100);
+  opacity: 1;
+}
+.slideBox .prevStop {
+  display: none;
+}
+.slideBox .nextStop {
+  display: none;
+}
+.lsfsale {
+  height: 452px;
+}
+.lsfsale .lsfreg ul {
+  text-align: center;
+  width: 1050px;
+  margin: 0 auto;
+}
+.lsfsale .lsfreg ul li {
+  float: left;
+  padding: 70px 58.5px 59px;
+}
+.lsfsale .lsfreg ul li span {
+  width: 51px;
+  height: 51px;
+  display: block;
+  margin-bottom: 10px;
+  background-position: center center !important;
+}
+.lsfsale .lsfreg ul li .reg1 {
+  background: url(../img/reg1.jpg) no-repeat;
+}
+.lsfsale .lsfreg ul li .reg2 {
+  background: url(../img/reg2.jpg) no-repeat;
+}
+.lsfsale .lsfreg ul li .reg3 {
+  background: url(../img/reg3.jpg) no-repeat;
+}
+.lsfsale .lsfreg ul li .reg4 {
+  background: url(../img/reg4.png) no-repeat;
+}
+.lsfsale .lsfreg ul li .reg5 {
+  background: url(../img/reg5.jpg) no-repeat;
+}
+.lsfsale .lsfreg ul li .reg6 {
+  background: url(../img/reg6.jpg) no-repeat;
+}
+.lsfsale .lsfsent ul {
+  margin: 0 auto;
+  width: 1244px;
+}
+.lsfsale .lsfsent ul li {
+  width: 301px;
+  height: 173px;
+  background-color: #388ded;
+  float: left;
+  margin-right: 10px;
+}
+.lsfsale .lsfsent ul li a {
+  width: 301px;
+  height: 173px;
+  position: relative;
+  display: block;
+  color: #fff;
+}
+.lsfsale .lsfsent ul li a p:first-child {
+  background: url(../img/sent1.png) no-repeat;
+  top: 17%;
+  width: 72px;
+  height: 72px;
+  margin-left: -36px;
+  position: absolute;
+  left: 50%;
+}
+.lsfsale .lsfsent ul li a p:nth-child(2) {
+  width: 100%;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  text-align: center;
+}
+.lsfsale .lsfsent ul li a p:last-child {
+  width: 100%;
+  position: absolute;
+  bottom: 26px;
+  left: 0;
+  text-align: center;
+}
+.lsfsale .lsfsent ul li:nth-child(2) {
+  background-color: #48bf6c;
+}
+.lsfsale .lsfsent ul li:nth-child(2) p:first-child {
+  background: url(../img/sent2.png) no-repeat;
+}
+.lsfsale .lsfsent ul li:nth-child(3) {
+  background-color: #f6af2a;
+}
+.lsfsale .lsfsent ul li:nth-child(3) p:first-child {
+  background: url(../img/sent3.png) no-repeat;
+}
+.lsfsale .lsfsent ul li:nth-child(4) {
+  background-color: #3ec0d1;
+}
+.lsfsale .lsfsent ul li:nth-child(4) p:first-child {
+  background: url(../img/sent4.png) no-repeat;
+}
+.lsfselect {
+  width: 100%;
+  background-color: #f4f4f4;
+}
+.lsfselect .lsfwrapper div:first-child {
+  width: 100%;
+  font-size: 20px;
+  padding: 68px 0;
+  text-align: center;
+}
+.lsfselect .lsfwrapper div:nth-child(2) {
+  width: 1251px;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+.lsfselect .lsfwrapper div:nth-child(2) a {
+  width: 406px;
+  height: 298px;
+  margin-right: 11px;
+  background-color: #fff;
+  text-align: center;
+  float: left;
+  display: block;
+  position: relative;
+}
+.lsfselect .lsfwrapper div:nth-child(2) a img {
+  margin-top: 45px;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  left: 113px;
+  transition: top 0.25s linear;
+}
+.lsfselect .lsfwrapper div:nth-child(2) a p {
+  font-size: 14px;
+  width: 100%;
+  font: 14px;
+  text-align: center;
+  margin-bottom: 27px;
+  position: absolute;
+  bottom: 20px;
+}
+.lsfselect .lsfwrapper div:nth-child(2) a:hover img {
+  top: -10px;
+}
+.lsfselect .lsfwrapper div:last-child ul {
+  width: 1250px;
+  height: 228px;
+  margin: 0 auto;
+}
+.lsfselect .lsfwrapper div:last-child ul li {
+  float: left;
+  margin-right: 10px;
+  margin-bottom: 70px;
+  position: relative;
+}
+.lsfselect .lsfwrapper div:last-child ul li a {
+  display: block;
+}
+.lsfselect .lsfwrapper div:last-child ul li a span:nth-child(2) {
+  background: url(../img/viedio.png);
+  position: absolute;
+  top: 54px;
+  left: 165px;
+  display: block;
+  width: 51px;
+  height: 51px;
+}
+.lsfselect .lsfwrapper div:last-child ul li a span:nth-child(3) {
+  position: absolute;
+  top: 56px;
+  left: 234px;
+  color: #fff;
+  font-size: 16px;
+}
+.lsfselect .lsfwrapper div:last-child ul li a span:nth-child(4) {
+  position: absolute;
+  top: 83px;
+  left: 234px;
+  color: #fff;
+}
+.lsfequities div:first-child {
+  padding: 68px 0;
+  margin-bottom: 40px;
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+}
+.lsfequities div:last-child {
+  margin-left: 55px;
+}
+.lsfequities div:last-child ul li {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 245px;
+}
+.lsfequities div:last-child ul li div:first-child {
+  float: left;
+  width: 84px;
+  height: 90px;
+  margin-top: 6px;
+  margin-right: 46px;
+}
+.lsfequities div:last-child ul li .equities1 {
+  background: url(../img/equities1.jpg) no-repeat;
+}
+.lsfequities div:last-child ul li .equities2 {
+  background: url(../img/equities2.jpg) no-repeat;
+}
+.lsfequities div:last-child ul li .equities3 {
+  background: url(../img/equities3.jpg) no-repeat;
+}
+.lsfequities div:last-child ul li .equities4 {
+  background: url(../img/equities4.jpg) no-repeat;
+}
+.lsfequities div:last-child ul li div:last-child p:first-child {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+.lsfequities div:last-child ul li div:last-child p:nth-child(2) {
+  line-height: 24px;
+  margin-bottom: 13px;
+  font-size: 14px;
+  width: 458px;
+  height: 72px;
+}
+.lsfequities div:last-child ul li div:last-child p:last-child a {
+  color: #00bbf2;
+}
+.lsfunderstand {
+  background-color: #f4f4f4;
+}
+.lsfunderstand .lsfproblem div:first-child {
+  padding: 68px 0;
+  margin-top: -6px;
+  font-size: 20px;
+  text-align: center;
+}
+.lsfunderstand .lsfproblem div:nth-child(2) dl {
+  float: left;
+  width: 248px;
+  height: 238px;
+  text-align: center;
+}
+.lsfunderstand .lsfproblem div:nth-child(2) dl dt {
+  margin-bottom: 13px;
+}
+.lsfunderstand .lsfproblem div:nth-child(2) dl dt a {
+  width: 100%;
+  font-size: 14px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  padding-bottom: 13px;
+  text-align: center;
+}
+.lsfunderstand .lsfproblem div:nth-child(2) dl dt a span {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 14px;
+  height: 1px;
+  background: #929292;
+  margin-left: -7px;
+}
+.lsfunderstand .lsfproblem div:nth-child(2) dl dd {
+  line-height: 27px;
+  font-size: 14px;
+}
+.lsfunderstand .lsfproblem div:nth-child(2) dl dd a:hover {
+  color: #0cbbef;
+}
+.lsfcontact {
+  height: 328px;
+}
+.lsfcontact div:first-child {
+  padding: 68px 0 36px;
+  font-size: 20px;
+  text-align: center;
+  box-sizing: content-box;
+}
+.lsfcontact div:last-child ul li {
+  float: left;
+  width: 25%;
+  text-align: center;
+  padding-bottom: 68px;
+}
+.lsfcontact div:last-child ul li a {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  padding: 26px 0;
+  cursor: pointer;
+  margin-bottom: -20px;
+}
+.lsfcontact div:last-child ul li a img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 79px;
+}
+.lsfcontact div:last-child ul li a span:first-child {
+  display: block;
+  width: 34px;
+  height: 34px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+}
+.lsfcontact div:last-child ul li a span:nth-child(2) {
+  display: block;
+  font-size: 16px;
+  padding-top: 12px;
+  margin-bottom: 9px;
+}
+.lsfcontact div:last-child ul li a span:last-child {
+  display: block;
+  font-size: 14px;
+  color: #999;
+  margin-top: -4px;
+}
+.lsfcontact div:last-child ul li a .contact1 {
+  background: url(../img/contact1.jpg);
+}
+.lsfcontact div:last-child ul li a .contact2 {
+  background: url(../img/contact2.jpg);
+}
+.lsfcontact div:last-child ul li a .contact3 {
+  background: url(../img/contact3.jpg);
+}
+.lsfcontact div:last-child ul li a .contact4 {
+  background: url(../img/contact4.jpg);
+}
+.lsfcontact div:last-child ul li a:hover .lsfbs {
+  color: skyblue;
+}
+.lsfcontact div:last-child ul li a:hover .lsfwx {
+  display: block;
+}
+.lsf-spec-store ul {
+  margin-bottom: 86px;
+  overflow: hidden;
+}
+.lsf-spec-store ul .lsfnumber1 {
+  width: 621px;
+  float: left;
+  height: 378px;
+  overflow: hidden;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 {
+  background-color: #5a66aa;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-repeat: no-repeat;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 p:first-child {
+  font-size: 24px;
+  padding-top: 81px;
+  margin: 0 60px 23px;
+  box-sizing: content-box;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 p:nth-child(2) {
+  margin: 0 60px 10px;
+  font-size: 14px;
+  box-sizing: content-box;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 a {
+  color: #00bbf2;
+  margin: 0 60px 50px;
+  display: block;
+  font-size: 14px;
+  box-sizing: content-box;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul {
+  margin: 46px 0 0 60px;
+  overflow: hidden;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li {
+  width: 48px;
+  height: 53px;
+  float: left;
+  font-size: 12px;
+  margin-right: 40px;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li span:first-child {
+  display: block;
+  height: 27px;
+  margin-bottom: 8px;
+  background: url(../img/store.png) no-repeat;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li span:nth-child(2) {
+  display: block;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li .lsf1store1 {
+  background-position: 0 0 !important;
+  margin-left: 16px;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li .lsf1store2 {
+  background-position: -86px 0 !important;
+  margin-left: 11px;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li .lsf1store3 {
+  background-position: -177px 0 !important;
+  margin-left: 7px;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li .lsf1store4 {
+  background-position: -271px 0 !important;
+  margin-left: 14px;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li .lsf1store5 {
+  background-position: -364px 0 !important;
+  margin-left: 17px;
+}
+.lsf-spec-store ul .lsfnumber1 .lsfnum1 ul li .lsf1store6 {
+  background-position: -453px 0 !important;
+  margin-left: 16px;
+}
+.lsf-spec-store ul .lsfnumber2 {
+  background: url(../img/number2.png);
+  width: 619px;
+  float: left;
+  height: 378px;
+  overflow: hidden;
+}
+.lsf-spec-store ul .lsfnumber3 {
+  background: url(../img/number3.png);
+  width: 619px;
+  float: left;
+  height: 378px;
+  overflow: hidden;
+}
+.lsf-spec-store ul .lsfnumber4 {
+  width: 621px;
+  float: left;
+  height: 378px;
+  overflow: hidden;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 {
+  background-color: #f4f4f4;
+  width: 100%;
+  height: 100%;
+  color: #393939;
+  background-repeat: no-repeat;
+  transition: transform 0.5s, opacity 0.5s;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 p:first-child {
+  font-size: 24px;
+  padding-top: 81px;
+  margin: 0 60px 23px;
+  box-sizing: content-box;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 p:nth-child(2) {
+  margin: 0 60px 10px;
+  font-size: 14px;
+  box-sizing: content-box;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 a {
+  color: #00bbf2;
+  margin: 0 60px 50px;
+  display: block;
+  font-size: 14px;
+  box-sizing: content-box;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul {
+  margin: 46px 0 0 60px;
+  overflow: hidden;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li {
+  width: 48px;
+  height: 53px;
+  float: left;
+  font-size: 12px;
+  margin-right: 40px;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li span:first-child {
+  display: block;
+  height: 27px;
+  margin-bottom: 8px;
+  background: url(../img/store.png) no-repeat;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li span:nth-child(2) {
+  display: block;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li .lsf1store1 {
+  background-position: 0 -57px !important;
+  margin-left: 16px;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li .lsf1store2 {
+  background-position: -86px -57px !important;
+  margin-left: 11px;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li .lsf1store3 {
+  background-position: -177px -57px !important;
+  margin-left: 7px;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li .lsf1store4 {
+  background-position: -271px -57px !important;
+  margin-left: 14px;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li .lsf1store5 {
+  background-position: -364px -57px !important;
+  margin-left: 17px;
+}
+.lsf-spec-store ul .lsfnumber4 .lsfnum1 ul li .lsf1store6 {
+  background-position: -450px -57px !important;
+  margin-left: 16px;
+}
+/*# sourceMappingURL=index.css.map */

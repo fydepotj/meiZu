@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>魅族购物车</title>
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/car.css">
+    <link rel="stylesheet" href="css/index-base.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="css/scratch.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/c_index.css"> -->
+    <link rel="icon" href="favicon.ico">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/car.js"></script>
+    <script type="text/javascript" src="js/citydata.min.js"></script>
+	<script type="text/javascript" src="js/cityPicker-2.0.3.js"></script>
+	<script type="text/javascript">
+		$(function () {
+			// 模拟城市-无联动/无搜索
+			var selector1 = $('#city-picker-selector1').cityPicker({
+				dataJson: cityData,
+				renderMode: true,
+				search: false,
+				storage: false,
+				autoSelected: false,
+				shorthand: true,
+				code: 'cityCode',
+				level: 4,
+				onChoiceEnd: function () {
+					console.log(this.values)
+				}
+			});
+
+			// 设置城市
+			selector1.setCityVal('广东省, 广州市, 天河区, 天园街道');
+
+			$('.btn-setcity').on('click', function (event) {
+				selector1.setCityVal('广东省, 深圳市, 罗湖区, 桂园街道');
+			});
+
+			// 获取城市值
+			$('.btn-obtain').on('click', function (event) {
+				alert(JSON.stringify(selector1.getCityVal()));
+			});
+
+			$('.btn-prohibit').on('click', function (event) {
+				selector1.changeStatus('disabled');
+			});
+
+			$('.btn-current').on('click', function (event) {
+				selector1.changeStatus('current');
+			});
+
+			// 模拟城市-无联动/无搜索
+			var selector2 = $('#city-picker-selector2').cityPicker({
+				dataJson: cityData,
+				renderMode: true,
+				search: false,
+				autoSelected: true,
+				code: 'cityCode',
+				level: 3,
+				onChoiceEnd: function () {
+					console.log(this.values)
+				}
+			});
+
+			// 设置城市
+			selector2.setCityVal('广东省, 广州市, 天河区');
+
+			// 模拟城市-联动/搜索/键盘操作
+			var selector3 = $('#city-picker-search').cityPicker({
+				dataJson: cityData,
+				renderMode: true,
+				search: true,
+				autoSelected: true,
+				keyboard: true,
+				level: 2,
+				onChoiceEnd: function () {
+					console.log(this.values)
+				}
+			});
+
+			// 模拟城市-联动/搜索/键盘操作
+			var selector4 = $('#city-picker-search2').cityPicker({
+				dataJson: cityData,
+				renderMode: true,
+				search: true,
+				autoSelected: true,
+				keyboard: true,
+				level: 1,
+				onChoiceEnd: function () {
+					console.log(this.values)
+				}
+			});
+
+			//原生城市-联动
+			var select = $('.city-picker-select').cityPicker({
+				dataJson: cityData,
+				renderMode: false,
+				storage: false,
+				autoSelected: true,
+				level: 4,
+				onChoiceEnd: function () {
+					console.log(this.values)
+				}
+			});
+
+			// 设置城市
+			select.setCityVal('山西省, 太原市, 小店区, 坞城街道');
+		});
+	</script>
+    
+</head>
+
+<body>
+    <div class="shortcut">
+        <div id="lc-meizu-header-container" class="lc-meizu-header-container">
+
+            <div class="w">
+                <div class="lc-meizu-header clearfix">
+                    <div class="logo">
+                    <a href="../index.html"><img src="img/logo.png" alt=""></a>
+                    </div>
+                    <div class="nav">
+                        <ul>
+                            <li class="tanchu">
+                                <a href="../zlj/shouji.html">手机</a>
+                            </li>
+                            <li class="tanchu">
+                                <a href="../wwy/shengxue.html">声学</a>
+                            </li>
+                            <li class="tanchu">
+                                <a href="../xzq/peijian.html">配件</a>
+                            </li>
+                            <li class="tanchu">
+                                <a href="../ptm/shenghuo.html">生活</a>
+                            </li>
+                            <li>
+                                <a href="../lj/flyme.html">Flyme</a>
+                            </li>
+                            <li>
+                                <a href="../lsf/fuwu.html">服务</a>
+                            </li>
+                            <li>
+                                <a href="../jfy/zhuanmaidian.html">专卖店</a>
+                            </li>
+                            <li>
+                                <a href="../xdf/bbs.html">社区</a>
+                            </li>
+                            <li class="tanchu">
+                                <a href="#" id="app">APP下载</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="search">
+                        <input type="text" placeholder="魅族16Xs">
+                        <span class="iconfont icon-magnifier"></span>
+                    </div>
+                    <!-- 字体图标 -->
+                    <div class="user">
+                        <a href="#" class="user-icon-user">
+                            <span class="iconfont icon-user"></span>
+                        </a>
+                        <div class="login">
+                            <ul>
+                                <li><a href="#">立即登录</a></li>
+                                <li><a href="#">立即注册</a></li>
+                                <li><a href="#">我的订单</a></li>
+                                <li><a href="#">M码通道</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="shopping-cart">
+                        <a href="../cxy/buy.html">
+                            <span class="iconfont icon-shopping-cart"></span>
+                        </a>
+                        <i>5</i>
+                    </div>
+                    <!-- 字体图标 -->
+                </div>
+            </div>
+            <div class="hd1 hide">
+                <ul>
+                    <li>
+                        <a href="../xdf/16xs.html">
+                            <img src="img/hd1-pic1.jpg" alt="">
+                            <p>魅族 16Xs</p>
+                            <em>￥1499</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../csw/car.html">
+                            <img src="img/hd1-pic2.jpg" alt="">
+                            <p>魅族 16s</p>
+                            <em>￥2699</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../csw/car.html">
+                            <img src="img/hd1-pic3.jpg" alt="">
+                            <p>魅族 Note9</p>
+                            <em>￥1199</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../csw/car.html">
+                            <img src="img/hd1-pic4.jpg" alt="">
+                            <p>魅族 16th</p>
+                            <em>￥2298</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../csw/car.html">
+                            <img src="img/hd1-pic5.jpg" alt="">
+                            <p>魅族 16 X</p>
+                            <em>￥1598</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../csw/car.html">
+                            <img src="img/hd1-pic6.jpg" alt="">
+                            <p>魅族 X8</p>
+                            <em>￥1298</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../csw/car.html">
+                            <img src="img/hd1-pic7.jpg" alt="">
+                            <p>魅族 Note8</p>
+                            <em>￥999</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../csw/car.html">
+                            <img src="img/hd1-pic8.jpg" alt="">
+                            <p>魅族 15</p>
+                            <em>￥1498</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd2 hide">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic1.jpg" alt="">
+                            <p>魅族 EP2C 耳机</p>
+                            <em>￥129</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic2.jpg" alt="">
+                            <p>魅族 POP2 无线蓝牙</p>
+                            <em>￥399</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic3.jpg" alt="">
+                            <p>魅族 HIFI 解码耳放</p>
+                            <em>￥169</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic4.jpg" alt="">
+                            <p>魅族 EP63NC 无线降...</p>
+                            <em>￥499</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic5.jpg" alt="">
+                            <p>魅族 Flow Bass 三单元...</p>
+                            <em>￥379</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic6.jpg" alt="">
+                            <p>魅族 LIVE 四单元动铁...</p>
+                            <em>￥1099</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic7.jpg" alt="">
+                            <p>魅族 HALO 激光蓝牙...</p>
+                            <em>￥499</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd2-pic8.jpg" alt="">
+                            <p>魅蓝 EP52 蓝牙耳机</p>
+                            <em>￥199</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd3 hide">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic1.jpg" alt="">
+                            <p>魅族 16s 壳膜套装</p>
+                            <em>￥39</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic2.jpg" alt="">
+                            <p>魅族移动电源3</p>
+                            <em>￥79</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic3.jpg" alt="">
+                            <p>魅族无线充电器</p>
+                            <em>￥99</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic4.jpg" alt="">
+                            <p>魅族 Type-C 2.0数据线</p>
+                            <em>￥49</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic5.jpg" alt="">
+                            <p>魅族 Micro USB 数据线</p>
+                            <em>￥29</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic6.jpg" alt="">
+                            <p>快充电源适配器</p>
+                            <em>￥69</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic7.jpg" alt="">
+                            <p>魅族 16th 高透...</p>
+                            <em>￥19</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd3-pic8.jpg" alt="">
+                            <p>魅族 16th Plus 亲肤...</p>
+                            <em>￥29</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd4 hide">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd4-pic1.jpg" alt="">
+                            <p>魅族星球探索 鼠标垫</p>
+                            <em>￥69</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd4-pic2.jpg" alt="">
+                            <p>魅族星球探索 帆布袋</p>
+                            <em>￥69</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd4-pic3.jpg" alt="">
+                            <p>魅族极简都市双肩包</p>
+                            <em>￥179</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd4-pic4.jpg" alt="">
+                            <p>魅族路由器 极速版</p>
+                            <em>￥99</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd4-pic5.jpg" alt="">
+                            <p>魅族 Mini 线控自拍杆</p>
+                            <em>￥59</em>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/hd4-pic6.jpg" alt="">
+                            <p>Everyday 乐游系列...</p>
+                            <em>￥599</em>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div style="display: none" class="appDownload hide">
+                <div class="app-dow">
+                    <img src="img/appdownload.jpg" alt="">
+                </div>
+            </div>
+    
+        </div>
+
+    </div>
+    <div class="c_nav">
+        <div class="w">
+            <div class="fl">魅族 Note8</div>
+            <div class="fr">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">概述</a></li>
+                    <li class="ln"></li>
+                    <li><a href="javascript:;">参数</a></li>
+                    <li class="ln"></li>
+                    <li><a href="javascript:;">常见问题</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="w clearfix">
+            <div class="blk">
+                <div class="fl block">
+                    <div class="big">
+                        <a href="javascript:;"><img src="img/Cgbj0FvQPm-AKpRJAANYUefuOfg281.png" alt=""></a>
+                    </div>
+                    <ul class="clearfix">
+                        <li><a href="javascript:;"><img src="img/Cgbj0FvQPm-AKpRJAANYUefuOfg281.png" alt=""></a>
+                        </li>
+                        <li><a href="javascript:;"><img src="img/Cgbj0FvQPkyAYLm-AAeHBY_8hwY127.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/Cgbj0FvQPmCAB4J9AAjQXlKrPyA451.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/Cgbj0FvQPliAH09-AANaoUYg1Wc407.png" alt=""></a></li>
+                    </ul>
+                    <div class="bt">
+                        <img src="img/2019-06-11_142544.png" alt="">
+                    </div>
+                </div>
+                <div class="fl ">
+                    <div class="big">
+                        <a href="javascript:;"><img src="img/hl0.png" alt=""></a>
+                    </div>
+                    <ul class="clearfix">
+                        <li><a href="javascript:;"><img src="img/hl0.png" alt=""></a>
+                        </li>
+                        <li><a href="javascript:;"><img src="img/hl1.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/hl2.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/hl3.png" alt=""></a></li>
+                    </ul>
+                    <div class="bt">
+                        <img src="img/2019-06-11_142544.png" alt="">
+                    </div>
+                </div>
+                <div class="fl ">
+                    <div class="big">
+                        <a href="javascript:;"><img src="img/yz0.png" alt=""></a>
+                    </div>
+                    <ul class="clearfix">
+                        <li><a href="javascript:;"><img src="img/yz0.png" alt=""></a>
+                        </li>
+                        <li><a href="javascript:;"><img src="img/yz1.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/yz2.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/yz3.png" alt=""></a></li>
+                    </ul>
+                    <div class="bt">
+                        <img src="img/2019-06-11_142544.png" alt="">
+                    </div>
+                </div>
+                <div class="fl ">
+                    <div class="big">
+                        <a href="javascript:;"><img src="img/yh0.png" alt=""></a>
+                    </div>
+                    <ul class="clearfix">
+                        <li><a href="javascript:;"><img src="img/yh0.png" alt=""></a>
+                        </li>
+                        <li><a href="javascript:;"><img src="img/yh1.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/yh2.png" alt=""></a></li>
+                        <li><a href="javascript:;"><img src="img/yh3.png" alt=""></a></li>
+                    </ul>
+                    <div class="bt">
+                        <img src="img/2019-06-11_142544.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="fr">
+                <div class="red">
+                    <h2>魅族 Note8</h2>
+                    <p>【限时领券最高立减350元】【分期6期免息】骁龙632 | 6.0 英寸全面屏 | 3600mAh 大电池 | mCharge </p>
+                    <p> 快充加持 | Dual PD 全像素双核对焦 |人脸指纹双解锁</p>
+                </div>
+                <div class="pri">
+                    <p>￥999.00</p>
+                    <p><span>优惠券</span><a href="javascript:;">满999减150</a><em>|</em>
+                        <a href="javascript:;"> 满1298减350</a>
+                        <a href="javascript:;" id="bblue">更多></a>
+                        <div id="much"><img src="img/1449643421-24522.png" alt=""></div>
+                    </p>
+                    <p><span>加购加</span>另加15元起，即可换购超值商品<a href="javascript:;" id="bbblue" class="more">立即加购></a> 
+                        <div id="moree"><img src="img/Cgbj0Fmb55mABV4HAAKspJD9ivQ842.png" alt=""></div>
+                    </p>
+                </div>
+                <div class="post">
+                    <div><span>支&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;持</span> <img src="img/2019-06-11_101949.png"
+                            alt="">花呗分期 <img src="img/2019-06-11_101949.png" alt="">顺丰发货<img
+                            src="img/2019-06-11_101949.png" alt="">7天无理由退货
+                    </div>
+                    <div><span>配送服务</span>
+                        <div class="dome-main">
+                            <div class="city-picker-selector" id="city-picker-selector2"></div><!-- end .city-picker-selector -->
+                        </div><!-- end .dome-main -->
+                        <p>本商品由 魅族 负责发货并提供售后服务 <img src="img/2019-06-11_102844.png" alt=""><span id="login">商城服务</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="many">
+                    <div class="clearfix">
+                        <div class="fl">
+                            <span>型</span>
+                            <span></span>
+                            <span></span>
+                            <span>号</span>
+                        </div>
+                        <div class="fr">
+                            <a href="javascript:;">魅族 Note8</a>
+                            <a href="javascript:;">魅族 X8</a>
+                            <a href="javascript:;">魅族 Note9</a>
+                            <a href="javascript:;">魅族 16th</a>
+                            <a href="javascript:;">魅族 16th Plus</a>
+                            <a href="javascript:;">魅族 16 X</a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fl">
+                            <span>网</span>
+                            <span>络</span>
+                            <span>类</span>
+                            <span>型</span>
+                        </div>
+                        <div class="fr">
+                            <a href="javascript:;">全网通公开版</a>
+
+                        </div>
+                    </div>
+                    <div class="clearfix pro">
+                        <div class="fl">
+                            <span>颜</span>
+                            <span>色</span>
+                            <span>分</span>
+                            <span>类</span>
+                        </div>
+                        <div class="fr">
+                            <a href="javascript:;"><img src="img/Cgbj0VvINL-AGM20AAw4GirVtYA698.png80x80.png" alt="">  曜黑</a>
+                            <a href="javascript:;"><img src="img/Cgbj0FvQPoCAVTZOAANhcY1jWUk925.png80x80.png" alt="">  灰蓝</a>
+                            <a href="javascript:;"><img src="img/Cgbj0VvQPgqACwWfAAM1qdVP9Cw937.png80x80.png" alt="">  烟紫</a>
+                            <a href="javascript:;"><img src="img/Cgbj0VvQPnuAAwPPAAMv8zzt2DE910.png80x80.png" alt="">  焰红</a>
+
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fl">
+                            <span>内</span>
+                            <span>容</span>
+                            <span>存</span>
+                            <span>储</span>
+                        </div>
+                        <div class="fr">
+                            <a href="javascript:;">4+32GB</a>
+                            <a href="javascript:;">4+64GB</a>
+
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fl">
+                            <span>选</span>
+                            <span>择</span>
+                            <span>套</span>
+                            <span>餐</span>
+                        </div>
+                        <div class="fr">
+                            <a href="javascript:;">官方标配
+                            </a>
+                            <a href="javascript:;">EP21套餐 <span>省30元</span></a>
+                            <a href="javascript:;">EP52套餐<span>省120元</span></a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fl">
+                            <span>花</span>
+                            <span>呗</span>
+                            <span>分</span>
+                            <span>期</span>
+                            <img src="img/2019-06-11_110639.png" alt="">
+                        </div>
+                        <div class="fr allprice">
+                            <a href="javascript:;">
+                                <p class="pcl">¥452.33×3期</p>
+                                <p>免手续费</p>
+                            </a>
+                            <a href="javascript:;">
+                                <p class="pcl">¥226.16×6期</p>
+                                <p>免手续费</p>
+                            </a>
+                            <a href="javascript:;">
+                                <p class="pcl">¥121.56×12期</p>
+                                <p>含手续费 ￥8.48/期</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <div class="fl">
+                            <span>数</span>
+                            <span></span>
+                            <span></span>
+                            <span>量</span>
+
+                        </div>
+                        <div class="fl">
+                            <a href="javascript:;" id="reduce">-</a>
+                            <input type="text" value="1" id="count">
+                            <span id="sum"></span>
+                            <a href="javascript:;" id="increase">+</a>
+                        </div>
+                    </div>
+                    <div class="clearfix">
+                        <a href="../cxy/buy.html">立即购买</a>
+                        <a href="javascript:;" id="goCar">加入购物车</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="product">
+        <div class="w">
+            <div class="hd">
+                <h2>商品详情</h2>
+            </div>
+            <ul>
+                <li><img src="img/Cgbj0VzkqcOAY_9UAAqv_5zgrvs792.jpg" alt=""></li>
+                <li><img src="img/Cgbj0FzkqciAQsR3AArLaGcReg8550.jpg" alt=""></li>
+                <li><img src="img/Cgbj0Vzkqc2AKIlaAAbheFjyEvA655.jpg" alt=""></li>
+            </ul>
+           
+        </div>
+      <div class="top"></div>
+    </div>
+    <div class="rmd">
+             <div class="w">
+                    <h3>为您推荐    </h3>
+                    <ul class="clearfix">
+                        <li>
+                            <img src="img/Cgbj0FvQPmCAB4J9AAjQXlKrPyA451.png120x120.jpg" alt="">
+                              <!-- <p><a href="javascript:;">魅族 Note8 高透保护膜</a></p> -->
+                              <p><a href="javascript:;">高透光率 助双眼捕捉每一颗像素的色彩</a></p>
+                              <p><a href="javascript:;"><span>¥19</span></a></p>
+                        </li>
+                        <li>
+                            <img src="img/Cgbj0FvQPkyAYLm-AAeHBY_8hwY127.png120x120.jpg" alt="">
+                              <p><a href="javascript:;">魅族 Note8 亲肤保护壳</a>  </p>
+                              <p><a href="javascript:;">轻盈亲近 薄若无形</a></p>
+                              <p><span>¥29</span></p>
+                        </li>
+                        <li>
+                            <img src="img/Cgbj0VusSJ6AH_bMAAimBuNV0-4121.png120x120.jpg" alt="">
+                              <p><a href="javascript:;">魅族 X8</a></p>
+                              <p><a href="javascript:;">【限时领券立减200元】【分期6期免息】骁龙710 | 6.2寸定制浅刘海屏 | 89.6%屏占比 | 旗舰双摄 | 人脸+指纹双解锁</a></p>
+                              <p><a href="javascript:;"><span>¥1298</span></a></p>
+                        </li>
+                        
+                    </ul>
+             </div>
+    </div>
+    <!-- 底部开始 -->
+    <div id="meizu-footer" class="meizu-footer clearfix">
+        <div class="meizu-footer-link clearfix">
+            <div class="w  clearfix">
+                <div class="meizu-row clearfix">
+                    <ul class="meizu-footer-service" id="meizu-footer-service">
+                        <li>
+                            <a href="#">
+                                <img src="img/sprit1.png">
+                                <span>满80免运费</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sprit2.png">
+                                <span>100+ 城市次日送达</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sprit3.png">
+                                <span>7天无理由退货</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sprit4.png">
+                                <span>15天换货保障</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sprit5.png">
+                                <span>1年免费保修</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/sprit6.png">
+                                <span>上门快修</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="onlive-server">
+                        <span>周一至周日 7:30-24:00</span>
+                        <p class="tel">400-788-3333</p>
+                        <a class="onlive-btn" href="#">在线客服</a>
+                    </div>
+                </div>
+                <hr class="footer-hr">
+                <div class="meizu-footer-co">
+                    <div class="meizu-row">
+                        <div class="meizu-footer-info">
+                            <div class="meizu-footer-info-left">
+                                <ul class="clearfix" id="meizu-footer-links">
+                                    <li>
+                                        <a href="#">了解魅族</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">加入我们</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">联系我们</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Flyme</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">魅族社区</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">天猫旗舰店</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">问题反馈</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">线上销售授权名单公示</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">出版物经营许可证</a>
+                                    </li>
+                                    <li class="no-border meizu-footer-langList" id="meizu-footer-langList">
+                                        <span id="meizu-footer-language" class="meizu-footer-language"
+                                            data-mtype="wmz_public_yw_language" data-bh="click_language">
+                                            <a class="button-language" href="javascript:void(0);">
+                                                <i class="icon-lang-logo icon-lang-logo-cn"></i>简体中文
+                                            </a>
+                                        </span>
+                                        <div class="modal-lang-body" id="modal-lang-body-footer">
+                                            <ul id="lang_list_" class="lang_list_" style="display:none">
+                                                <li class="footerLi">
+                                                    <a href="javascript:;" data-lang="/index.html"
+                                                        data-countryhref="https://www.meizu.com/index.html">
+                                                        <i style="background-image:url(https://fms.res.meizu.com/dms/2017/12/18/1c31db15-ab85-4932-8e6c-edfd6039bc60.png);background-position: 0 0;"
+                                                            class="lang-logo lang-logo-index.html">
+                                                        </i>
+                                                        <span>简体中文</span>
+                                                    </a>
+                                                </li>
+                                                <li class="footerLi">
+                                                    <a href="javascript:;" data-lang="/hk/"
+                                                        data-countryhref="https://www.meizu.com/hk">
+                                                        <i style="background-image:url(https://fms.res.meizu.com/dms/2017/12/18/85fba643-95ca-4db1-991c-43e66f108afb.png);background-position: 0 0;"
+                                                            class="lang-logo lang-logo-hk/"></i>
+                                                        <span>繁體中文</span>
+                                                    </a>
+                                                </li>
+                                                <li class="footerLi">
+                                                    <a href="javascript:;" data-lang="/en/"
+                                                        data-countryhref="https://www.meizu.com/en">
+                                                        <i style="background-image:url(https://www3.res.meizu.com/static/cn/icon-en/f9C63F21yJxwMNvsqRSTpnWlkiahgBue.png);background-position: 0 0;"
+                                                            class="lang-logo lang-logo-en/"></i>
+                                                        <span>English</span>
+                                                    </a>
+                                                </li>
+                                                <li class="footerLi">
+                                                    <a href="javascript:;" data-lang="/ru"
+                                                        data-countryhref="https://www.meizu.com/ru/">
+                                                        <i style="background-image:url(https://fms.res.meizu.com/dms/2017/12/18/e743e97c-71af-4853-a91d-bd81c2d3a31c.png);background-position: 0 0;"
+                                                            class="lang-logo lang-logo-ru"></i>
+                                                        <span>Русский</span>
+                                                    </a>
+                                                </li>
+                                                <li class="footerLi">
+                                                    <a href="javascript:;" data-lang="/ua"
+                                                        data-countryhref="https://www.meizuclub.com.ua">
+                                                        <i style="background-image:url(https://fms.res.meizu.com/dms/2017/12/18/f6b0d26b-e9ac-45a9-8b7f-0c4840a627c1.png);background-position: 0 0;"
+                                                            class="lang-logo lang-logo-ua"></i>
+                                                        <span>Україна</span>
+                                                    </a>
+                                                </li>
+                                                <li class="footerLi">
+                                                    <a href="javascript:;" data-lang="/tr"
+                                                        data-countryhref="https://www.meizu-tr.com/ ">
+                                                        <i style="background-image:url(https://fms.res.meizu.com/dms/2017/12/20/062710b5-2f96-4402-ad27-822af5b4f993.png);background-position: 0 0;"
+                                                            class="lang-logo lang-logo-tr"></i>
+                                                        <span>Türkiye</span>
+                                                    </a>
+                                                </li>
+                                                <li class="footerLi">
+                                                    <a href="javascript:;" data-lang="/in"
+                                                        data-countryhref="http://meizuindia.com/">
+                                                        <i style="background-image:url(https://fms.res.meizu.com/dms/2017/12/18/022b228e-19a7-4227-b686-e23ae231d3b5.png);background-position: 0 0;"
+                                                            class="lang-logo lang-logo-in"></i>
+                                                        <span>India</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+                                <div class="meizu-footer-language-wp clearfix"></div>
+
+                                <div class="meizu-footer-certificate">
+                                    ©2019 Meizu Telecom Equipment Co., Ltd. All rights reserved.&nbsp;&nbsp;&nbsp;&nbsp;
+                                    <a target="_blank" href="#">粤ICP备13003602号</a>
+                                    <a target="_blank" href="#">合字B2-20170010 </a>
+                                    <a target="_blank" href="#">营业执照</a>
+                                    <a target="_blank" href="#">法律声明</a>
+                                    <span class="footer-info-record">
+                                        <i></i>
+                                        粤公网安备 44049102496009 号
+                                    </span>
+                                    <a class="footer-info-license" href="#">
+                                        <i></i>
+                                    </a>
+                                    <a class="footer-info-wel" href="#">
+                                        <i></i>
+                                    </a>
+                                    <a class="footer-info-trust" href="#">
+                                        <i></i>
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+
+                            <div id="ii-subscribe">
+                                <a href="#"></a>
+                                <i class="ii-subscribe-img "
+                                    style="background-size:96%;background-image:url(https://fms.res.meizu.com/dms/2019/01/07/3b085af8-a47b-453c-b147-a4b352fb3a14.png)"
+                                    data-img="https://fms.res.meizu.com/dms/2019/01/07/3b085af8-a47b-453c-b147-a4b352fb3a14.png"
+                                    data-imghover="https://fms.res.meizu.com/dms/2019/01/07/6721704b-7b6d-445d-a025-e33649e5db74.png">
+                                    <em></em>
+                                </i>
+                                </a>
+                                <span class="ii-hr"></span>
+                                <a href="#">
+                                    <i class="ii-subscribe-img "
+                                        style="background-size:96%;background-image:url(https://fms.res.meizu.com/dms/2019/01/07/58e3e041-5543-4414-aaf1-d8e1fd539af6.png)"
+                                        data-img="https://fms.res.meizu.com/dms/2019/01/07/58e3e041-5543-4414-aaf1-d8e1fd539af6.png"
+                                        data-imghover="https://fms.res.meizu.com/dms/2019/01/07/cb0d00dc-41f7-4339-a0b3-25ee7dca1d4a.png">
+                                        <em></em>
+                                    </i>
+                                </a>
+                                <span class="ii-hr"></span>
+                                <a href="#">
+                                    <i class="ii-subscribe-img "
+                                        style="background-size:96%;background-image:url(https://fms.res.meizu.com/dms/2019/01/07/52cba4a4-b3a6-4522-9883-d3a918e7d4a9.png)"
+                                        data-img="https://fms.res.meizu.com/dms/2019/01/07/52cba4a4-b3a6-4522-9883-d3a918e7d4a9.png"
+                                        data-imghover="https://fms.res.meizu.com/dms/2019/01/07/aff10988-6493-49c0-961a-0c91eae603b4.png">
+                                        <em></em>
+                                    </i>
+                                </a>
+                                <span class="ii-hr"></span>
+                                <a href="#">
+                                    <i class="ii-subscribe-img "
+                                        style="background-size:96%;background-image:url(https://fms.res.meizu.com/dms/2019/01/07/bcccf9d2-e0e5-441b-b4a3-f78c12bc3933.png)"
+                                        data-img="https://fms.res.meizu.com/dms/2019/01/07/bcccf9d2-e0e5-441b-b4a3-f78c12bc3933.png"
+                                        data-imghover="https://fms.res.meizu.com/dms/2019/01/07/7df8d821-a5c4-4619-9981-04e31db6e3de.png">
+                                        <em></em>
+                                    </i>
+                                </a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- 底部结束 -->
+    <script src="js/index-base.js"></script>
+</body>
+
+</html>

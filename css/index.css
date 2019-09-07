@@ -1,0 +1,416 @@
+body{
+    background-color: #f4f4f4;
+}
+.banner{
+    position: relative;
+    height: 588px;
+    top: -82px;
+    /* margin: 0 auto; */
+    /* background: url(../img/banner3.jpg) center no-repeat/auto 670px; */
+}
+.slideBox {
+    /* width: 100%; */
+    height: 670px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+.slideBox .hd {
+    height: 15px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5px;
+    z-index: 1;
+}
+
+.slideBox .hd ul {
+    overflow: hidden;
+    zoom: 1;
+    float: left;
+}
+
+.slideBox .hd ul li {
+    float: left;
+    margin-right: 10px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+}
+
+.slideBox .hd ul li.on {
+    background: transparent;
+    /* color: transparent; */
+    border: 1px solid #fff;
+}
+
+.slideBox .bd {
+    /* position: relative; */
+    height: 100%;
+    z-index: 0;
+}
+
+.slideBox .bd li {
+    zoom: 1;
+    vertical-align: middle;
+}
+
+.slideBox .bd img {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 670px;
+    display: block;
+}
+.main .section-box{
+    margin-bottom: 50px;
+}
+.section-box .section-box-adv{
+    height: auto;
+    padding-bottom: 45px;
+    background-color: #fff;
+}
+.section-box-adv ul{
+    overflow: hidden;
+}
+.section-box-adv ul li{
+    float: left;
+    position: relative;
+    width: 25%;
+    padding-top: 45px;
+}
+.main .section-box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.main .section-box a img{
+    height: 130px;
+}
+.main .section-box em{
+    display: block;
+    color: #333;
+    font-size: 20px;
+}
+.main .section-box p{
+    font-size: 14px;
+    color: #999;
+}
+.index-phone-center{
+    background-color: #f4f4f4;
+}
+.section-title {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.section-title h3{
+    font-weight: 400;
+    background-color: #f4f4f4;
+}
+.index-phone-center .section-phone-box .section-box-adv {
+    height: 450px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+.index-phone-center .section-box-adv a {
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s linear;
+    background: url(../img/魅族\ 16X.jpg) no-repeat center
+}   
+.section-box a {
+    position: relative;
+    display: block;
+}
+.section-phone-box .section-box-row li {
+    float: left;
+    position: relative;
+    width: 303px;
+    height: 375px;
+    margin-right: 9px;
+    margin-top: 10px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.section-phone-box .section-box-row li.big {
+    width: 615px;
+    height: 610px;
+}
+.section-phone-box .section-box-row li .section-item-box {
+    height: 100%;
+}
+.section-box a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.big .section-item-box a img {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    height: 460px;
+    margin-left: -250px;
+}
+.section-item-box span h4{
+    padding-top: 40px;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 0;
+}
+.section-item-box span p{
+    padding: 15px 0;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+.big .section-item-box span em{
+    position: relative;
+    display: inline-block;
+    color: #c00;
+    font-size: 22px;
+    padding-left: 14px;
+}
+.section-box-row ul .mr0{
+    margin-right: 0;
+}
+.product-sign{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border-radius: 50%;
+}
+.red{
+    background-color: #ff3149\0;
+    background-image: linear-gradient(120deg,#ff3149,#ff64a6);
+}
+.section-item-box a.box-item  img{
+    height: 230px;
+    margin-top: 30px;
+}
+.section-item-box .box-info h4{
+    padding: 0;
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.section-item-box .box-info p{
+    color: #999;
+    font-size: 14px;
+}
+.section-box-row .section-item-box .box-item p+span{
+    color: #c00;
+}
+.index-audio-center .section-box-adv {
+    height: 450px;
+    background-color: #fff;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+    padding: 0;
+}
+.index-audio-center .section-box-adv a{
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s linear;
+    background: url(../img/section-box-adv2.jpg) no-repeat center;
+}
+.index-audio-center .section-box a img {
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+}
+.goods-box .box-info {
+    position: absolute;
+    top: 260px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+.goods-box .box-ad-info p {
+    color: #fff;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 0;
+    padding: 10px;
+}
+.goods-box .box-ad-info span{
+    color: #fff;
+    font-size: 14px;
+}
+.goods-box .box-ad-info em{
+    font-size: 24px;
+    font-weight: 700;
+    color: #6ad0c4;
+}
+.color .goods-box .box-ad-info p {
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.color .goods-box .box-ad-info span{
+    color: #999;
+    font-size: 14px;
+}
+.color .goods-box .box-ad-info em{
+    position: relative;
+    /* display: inline-block; */
+    color: #c00;
+    font-size: 22px;
+    padding-left: 14px;
+    font-weight: 400;
+}
+.color .goods-box a img{
+    height: 230px;
+    margin-top: 30px;
+}
+
+.index-parts-center .section-box-adv a{
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s linear;
+    background: url(../img/section-box-adv3.jpg) no-repeat center;
+}
+.index-house-center .section-box-adv a{
+    width: 100%;
+    height: 100%;
+    transition: opacity .2s linear;
+    background: url(../img/section-box-adv4.jpg) no-repeat center;
+}
+.section-comment-box .section-box-row li {
+    height: 388px;
+}
+.section-comment-box  img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.section-box-row li{
+    float: left;
+    position: relative;
+    width: 303px;
+    height: 400px;
+    margin-right: 9px;
+    margin-bottom: 9px;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+.section-comment-box .comment-img-wp {
+    height: 190px;
+    position: relative;
+    overflow: hidden;
+}
+.index-comment-center .section-comment-box .comment-img-wp img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+.section-comment-box .comment-user-info {
+    overflow: hidden;
+    height: 42px;
+    line-height: 42px;
+    margin-top: 10px;
+    padding: 0 15px;
+}
+.index-comment-center .section-comment-box .comment-user-info img {
+    width: 36px;
+    height: 36px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    float: left;
+    box-shadow: 1px 1px 1px 1px #eee;
+}
+.section-comment-box .comment-user-info .comment-username {
+    margin-left: 15px;
+    text-align: left;
+    float: left;
+}
+.index-comment-center .section-comment-box p {
+    padding: 10px 15px 15px;
+    font-size: 16px;
+    line-height: 27px;
+    text-align: left;
+    height: 91px;
+    color: #333;
+    overflow: hidden;
+}
+
+.section-comment-box p+span {
+    color: #999;
+    display: block;
+    padding: 0 15px;
+    margin-top: 10px;
+    text-align: left;
+}
+.section-box-adv a:hover{
+    opacity: 0.8;
+}
+.main li:hover{
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, .2);
+}
+.index-adv-center .section-box-adv a:hover{
+    opacity: 0.7;
+}
+.index-adv-center .section-box-adv li:hover{
+    box-shadow: none;
+}
+.index-flyme-center .section-box-row ul li{
+    height: 245px;
+    
+}
+.index-flyme-center .section-comment-box p{
+    text-align: center;
+}
+.index-flyme-center .Flymebd{
+    width: 616px;
+    
+}
+.index-flyme-center .Flymebd .comment-img-wp{
+    height: 100%;
+}
+.index-flyme-center .Flymebd img{
+    height: 100%;
+}
+.index-video-center .section-box-row ul li{
+    height: 244px;
+}
+.index-video-center .section-box-row ul li p{
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    text-align: center;
+}
+.index-video-center .section-box-row ul li span{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: url(../img/icon-video-player.png) no-repeat;
+    background-size: 100%;
+    right: 15px;
+    bottom: 105px;
+}

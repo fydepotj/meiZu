@@ -1,0 +1,375 @@
+body {
+  background-color: #f4f4f4;
+  margin: 0;
+  font-size: 14px;
+  min-width: 1240px;
+  min-height: 100%;
+  box-sizing: border-box;
+}
+.header {
+  background-color: #414345;
+}
+.band-banner .banner {
+  height: 500px;
+  cursor: pointer;
+  margin: 0 auto;
+  background-image: url(../img/banner1.jpg);
+  background-color: #f2f2f2;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.warpp-search {
+  padding-top: 10px;
+  /* padding-bottom: 60px; */
+  color: #666666;
+}
+.container {
+  width: 1240px;
+  margin: 0 auto;
+}
+.warpp-search .text {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 87px;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 1px;
+  color: black;
+}
+.text-fitter {
+  position: relative;
+  display: inline-block;
+  margin: 0;
+}
+.fitter-order {
+  float: left;
+}
+.fitter-order a {
+  position: relative;
+  float: left;
+  width: 50px;
+  height: 20px;
+  color: #343434;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 20px;
+  margin-right: 15px;
+}
+.fitter-order .down {
+  margin-right: 15px;
+}
+.fitter-order .down::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-bottom-color: inherit;
+}
+.fitter-order .down::after {
+  content: "";
+  position: absolute;
+  bottom: -1px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 5px solid transparent;
+  border-top-color: inherit;
+}
+.fitter-order a:hover {
+  transform: all 0.2s;
+  color: springgreen;
+}
+.goods-list {
+  position: relative;
+  z-index: 1;
+  height: auto;
+  box-sizing: border-box;
+}
+.list-warp {
+  box-sizing: inherit;
+}
+.item {
+  position: relative;
+  float: left;
+  width: 398px;
+  height: 556px;
+  margin: 0 15px 15px 0;
+  background-color: #fff;
+  box-sizing: border-box;
+  transform: all 0.3s;
+}
+.item .item-link {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 28px;
+  max-height: 556px;
+  text-align: center;
+}
+.item-link img {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 320px;
+  max-width: 320px;
+}
+.item-title {
+  font-size: 21px;
+  color: #343434;
+  padding: 0 12px;
+  margin: 10px 0;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-p {
+  display: inline-block;
+  margin: 5px auto;
+  color: #666;
+  text-align: center;
+  min-height: 24px;
+  font-size: 16px;
+  font-weight: 300;
+  max-width: 270px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.item-pice {
+  color: red;
+}
+.item-pice .one {
+  margin-right: 4px;
+  font-size: 14px;
+}
+.item-pice em {
+  font-size: 16px;
+}
+.item-pice .two {
+  font-size: 26px;
+}
+.item-link .item-hot {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #ff1133;
+  background-image: linear-gradient(120deg, #ff1133, #ff64a6);
+  font-size: 16px;
+  border-radius: 50%;
+}
+.item-link .item-blue {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  background-color: #2e74f6;
+  background-image: linear-gradient(120deg, #2e74f6, #56bdf9);
+  font-size: 16px;
+  border-radius: 50%;
+}
+.list-floor a {
+  display: block;
+  width: 100%;
+}
+.list-floor a img {
+  width: 100%;
+  height: 250px;
+}
+.mod-title {
+  text-align: left;
+  font-size: 28px;
+  color: #343434;
+  font-weight: 400;
+  overflow: hidden;
+  margin-top: 90px;
+  margin-bottom: 30px;
+}
+.mod-sider {
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid #fefefe;
+  margin-bottom: 50px;
+}
+.mod-wrap {
+  overflow: hidden;
+  position: relative;
+  transition: all 1s;
+}
+.mod-wp {
+  width: 2000%;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0px, 0px);
+  margin-right: -100px;
+  overflow: hidden;
+}
+.mod-item {
+  position: relative;
+  float: left;
+  width: 310px;
+  height: 430px;
+  margin-right: 0px;
+  display: block;
+  transition: all 0.2s;
+}
+.item-a {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  padding: 44px;
+}
+.mod-item img {
+  width: 230px;
+  min-height: 230px;
+}
+.item-disc {
+  margin-top: 35px;
+  text-align: center;
+}
+.item-disc .item-text {
+  font-size: 20px;
+  color: #2b2b2b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-price {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #ff1133;
+}
+.item-price .price-text {
+  font-size: 28px;
+}
+
+.lbt {
+  position: relative;
+  height: 100%;
+}
+
+.picScroll-left {
+  width: 100%;
+  /* overflow   : hidden; */
+  position: relative;
+  margin-bottom: 80px;
+  /* border   : 1px solid #ccc; */
+}
+
+.picScroll-left .hd {
+  overflow: hidden;
+  height: 30px;
+  background: #f4f4f4;
+  padding: 0 10px;
+  position: absolute;
+  right: 550px;
+  bottom: -60px;
+}
+
+.picScroll-left .hd .next {
+  background-position: 0 -50px;
+}
+
+.picScroll-left .hd .prevStop {
+  background-position: -60px 0;
+}
+
+.picScroll-left .hd .nextStop {
+  background-position: -60px -50px;
+}
+
+.picScroll-left .hd ul {
+  overflow: hidden;
+}
+
+.picScroll-left .hd ul li {
+  background-color: #fff;
+  width: 16px;
+  height: 16px;
+  margin-right: 0px;
+  float: left;
+  display: block;
+  overflow: hidden;
+  margin-right: 10px;
+  text-indent: -999px;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 1px solid #666;
+}
+
+.picScroll-left .hd ul li:hover {
+  background-color: #343434;
+}
+
+.picScroll-left .hd ul li.on {
+  background-position: 0 0;
+  background-color: #343434;
+}
+
+.picScroll-left .bd {
+  padding-top: 10px;
+}
+
+.picScroll-left .bd .picList {
+  background: #fff;
+  overflow: hidden;
+  width: 100%;
+  transition-duration: 0s;
+  transform: translate3d(0px, 0px, 0px);
+  zoom: 1;
+}
+
+.picScroll-left .bd .picList li {
+  width: 310px;
+  height: 430px;
+  margin-right: 0px;
+  float: left;
+  display: block;
+}
+
+.picScroll-left .picList li .pic a {
+  display: block;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 44px;
+  box-sizing: border-box;
+}
+
+.picScroll-left .picList li .pic img {
+  width: 230px;
+  min-height: 230px;
+  display: block;
+  margin: 0 auto;
+}
+
+.picScroll-left .picList li .pic a:hover img {
+  width: 230px;
+  min-height: 230px;
+}
+.picScroll-left .picList li .mod-desc {
+  margin-top: 35px;
+  text-align: center;
+}
+.picScroll-left .picList li .mod-desc .vm-title {
+  font-size: 18px;
+  font-weight: 400;
+  color: #2b2b2b;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.picScroll-left .picList li .mod-desc .vm-price{
+    margin-top: 15px;
+    font-weight: 700;
+    font-size: 18px;
+    color: red;
+}
